@@ -1,0 +1,39 @@
+.reveal .author {
+    font-style: italic;
+    font-size: 75%;
+}
+
+.reveal .author::before {
+    content: "—";
+    padding-right: 1rem;
+}
+
+.reveal pre code span.line { 
+    padding-left: 2rem;
+    display: block;
+}
+
+.reveal pre code span.line.focus {
+    background-color: #404040;
+    transition: background-color 0.25s ease-in-out;
+    padding-left: 0;
+}
+
+.reveal pre code span.line.focus::before {
+    content: "🡆";
+    width: 2rem;
+    display: inline-block;
+    text-align: center;
+    color: #ff4500;
+    animation: code-focus-line-arrow-fade 0.25s ease-in-out;
+}
+
+@keyframes code-focus-line-arrow-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

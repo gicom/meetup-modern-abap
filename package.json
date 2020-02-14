@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "slides": "reveal-md ./slides/ --port 8080 --listing-template './slides/lib/listing.html' --scripts './slides/lib/custom.js' --css './slides/lib/custom.css' --template './slides/lib/template.html' --watch",
+        "print": "concurrently \"npm run slides\" \"decktape --size 1920x1080 http://localhost:8080/slides.md#/ slides.pdf\""
+    },
+    "dependencies": {
+        "concurrently": "^5.1.0",
+        "decktape": "^2.11.0",
+        "reveal-md": "^3.3.1"
+    }
+}
