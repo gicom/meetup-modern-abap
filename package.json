@@ -6,6 +6,6 @@
     "dependencies": {
         "concurrently": "^5.1.0",
         "decktape": "^2.11.0",
-        "reveal-md": "^3.3.1"
+        "reveal-md": "^5.4.0"
     }
 }
